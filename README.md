@@ -1,227 +1,244 @@
 # practica_git_flow
 
+# Unit 1
+
+#### Instituto Tecnologico de Tijuana
+#### Semestre Septiembre-Enero 2020 Semestre Septiembre-Enero 2020
+####  Carrera: Ingenieria en sistemas Computacionales
+####  Materia: Datos Masivos
+####  Maestro: Jose Christian Romero Hernandez
+####  Oliver Cardenas Jesus Alejandro  16210561 
+
+
+###  Index
+#### Practice1
+#### Practice2
+#### Practice3
+#### Practice4
+#### Pair Coding
+#### Homework 
+
+### Practice 1
+```scala
+/*1.Develop an algorithm in scala that calculates the radius of a circle*/
+var a=3
+var r=math.sqrt(a/math.Pi)        
+/*2. Develop an algorithm in scala that tells me if a number is a cousin*/
+var t = ((2,4,5),(1,2,3),(3.1416,23))
+t._3._1
+/*3. Given the variable bird = "tweet", use string interpolation to print "I am writing a tweet"n*/
+var bird="tweet"
+printf(s"Estoy ecribiendo un %s",bird)
+/*4. Given the variable message = "Hi Luke, I'm your father!" use slilce to extract the  sequence "Luke"*/
+var mensaje = "Hola Luke yo soy tu padre!"
+mensaje.slice(5,9)
+/*5. What is the difference in value and a variable in scala?*/
+Value (val) is immutable once assigned the value this cannot be changed
+Variable (var) once assigned you can reassign the value, as long as the new value
+sea of the same type
+/*6. Given the tuple ((2,4,5), (1,2,3), (3,116,23))) the number 3,141 returns*/
+var t = ((2,4,5),(1,2,3),(3.1416,23))
+t._3._1
 
 
 
-Esta es la rama development
+```
+###  Practice 2
+```scala
+/*1.-Create a list called "list" with the elements "red", "white", "black"*/
+         var lista = collection.mutable.MutableList("rojo","blanco","negro")      
+         /*2.-Add 5 more items to "list" "green", "yellow", "blue", "orange", "pearl"*/
+          lista += ("verde","amarillo", "azul", "naranja", "perla")
+         /*3.-Bring the "list" "green", "yellow", "blue" items*/
+             lista(3)
+             lista(4)
+             lista(5)
+         /*4.-Create a number array in the 1-1000 range in 5-in-5 steps*/
+               var v = Range(1,1000,5)
+         /*5.-What are the unique elements of the List list (1,3,3,4,6,7,3,7) use conversion to sets*/
+              var l = List(1,3,3,4,6,7,3,7)
+               l.toSet
+         /*6.-Create a mutable map called names containing the following"Jose", 20, "Luis", 24, "Ana", 23, "Susana", "27*/
+          var map=collection.mutable.Map(("Jose", 20),("Luis", 24),("Ana", 23),("Susana", "27"))
+         /*6.-a. Print all map keys*/
+           map.keys
+         /*7.-b. Add the following value to the map ("Miguel", 23)*/
+          map += ("Miguel"->23)
+```
 
-
-
-cambio de rama
-
-### Features
-
-- Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);
-- Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;
-- Markdown Extras : Support ToC (Table of Contents), Emoji, Task lists, @Links...;
-- Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;
-- Support identification, interpretation, fliter of the HTML tags;
-- Support TeX (LaTeX expressions, Based on KaTeX), Flowchart and Sequence Diagram of Markdown extended syntax;
-- Support AMD/CMD (Require.js & Sea.js) Module Loader, and Custom/define editor plugins;
-
-# Editor.md
-
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
-
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
-
-
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-
-#H1 header
-##H2 header
-###H3 header
-####H4 header
-#####H5 header
-######H6 header
-#Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-##Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-###Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-####Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")
-#####Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-######Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-
-##Headers (Underline)
-
-H1 Header (Underline)
-=============
-
-H2 Header (Underline)
--------------
-
-###Characters
-                
-----
-
-~~Strikethrough~~ <s>Strikethrough (when enable html tag decode.)</s>
-*Italic*      _Italic_
-**Emphasis**  __Emphasis__
-***Emphasis Italic*** ___Emphasis Italic___
-
-Superscript: X<sub>2</sub>，Subscript: O<sup>2</sup>
-
-**Abbreviation(link HTML abbr tag)**
-
-The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.
-
-###Blockquotes
-
-> Blockquotes
-
-Paragraphs and Line Breaks
-                    
-> "Blockquotes Blockquotes", [Link](http://localhost/)。
-
-###Links
-
-[Links](http://localhost/)
-
-[Links with title](http://localhost/ "link title")
-
-`<link>` : <https://github.com>
-
-[Reference link][id/name] 
-
-[id/name]: http://link-url/
-
-GFM a-tail link @pandao
-
-###Code Blocks (multi-language) & highlighting
-
-####Inline code
-
-`$ npm install marked`
-
-####Code Blocks (Indented style)
-
-Indented 4 spaces, like `<pre>` (Preformatted Text).
-
-    <?php
-        echo "Hello world!";
-    ?>
-    
-Code Blocks (Preformatted text):
-
-    | First Header  | Second Header |
-    | ------------- | ------------- |
-    | Content Cell  | Content Cell  |
-    | Content Cell  | Content Cell  |
-
-####Javascript　
-
-```javascript
-function test(){
-	console.log("Hello world!");
+### Practice 3
+```scala
+//Define list event
+//cicle
+// if n is a number divisible on 2 print is even
+// else n is not a number divisible on 2  print is odd
+def listEvens(list:List[Int]): String ={
+    for(n <- list){
+        if(n%2==0){
+            println(s"$n is even")
+        }else{
+            println(s"$n is odd")
+        }
+    }
+    return "Done"
 }
- 
-(function(){
-    var box = function(){
-        return box.fn.init();
-    };
+// In this section of the code we declare 2 lists
+// and 2 Lis Events
+//Based on the elements of this list 
+//returning messages of is even or is odd based on the list elements
+val l = List(1,2,3,4,5,6,7,8)
+val l2 = List(4,3,22,55,7,8)
+listEvens(l)
+listEvens(l2)
 
-    box.prototype = box.fn = {
-        init : function(){
-            console.log('box.init()');
+//3 7 afortunado
+//List event
+def afortunado(list:List[Int]): Int={
+    var res=0
+    for(n <- list){
+        if(n==7){
+            res = res + 14
+        }else{
+            res = res + n
+        }
+    }
+    return res
+}
+//Values of afortunado
+//Based of values of this list we gona to receive results based on the condictional of for cicle
+val af= List(1,7,7)//
+//Print the result afortunado 29
+//1 = 1    7=14      7=14
+//1+14+14 = 29
+println(afortunado(af))
+//Define event list Balance
+def balance(list:List[Int]): Boolean={
+    var primera = 0
+    var segunda = 0
 
-			return this;
-        },
+    segunda = list.sum
+    //Primera Sum values to our list
+    //Segunda rest values to our list
 
-		add : function(str){
-			alert("add", str);
+    for(i <- Range(0,list.length)){
+        primera = primera + list(i)
+        segunda = segunda - list(i)
 
-			return this;
-		},
+        if(primera == segunda){
+            return true
+        }
+    }
+    return false 
+}
+//List ELements
+val bl = List(3,2,1)
+val bl2 = List(2,3,3,2)
+val bl3 = List(10,30,90)
+//run
+balance(bl)
+balance(bl2)
+balance(bl3)
+//Define palindromo
+//Reverse Palabra(Word)
+// if word dont are exactly the same word reverse
+//return false
+def palindromo(palabra:String):Boolean ={
+    return (palabra == palabra.reverse)
+}
 
-		remove : function(str){
-			alert("remove", str);
-
-			return this;
-		}
-    };
-    
-    box.fn.init.prototype = box.fn;
-    
-    window.box =box;
-})();
-
-var testBox = box();
-testBox.add("jQuery").remove("jQuery");
+val palabra = "OSO" 
+val palabra2 = "ANNA" 
+val palabra3 = "JUAN" 
+//Return Boolean
+//run
+println(palindromo(palabra))
+println(palindromo(palabra2))
+println(palindromo(palabra3))
 ```
 
-####HTML code
 
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <mate charest="utf-8" />
-        <title>Hello world!</title>
-    </head>
-    <body>
-        <h1>Hello world!</h1>
-    </body>
-</html>
+### Practice 4
+```scala
+///Exercise 1
+//Recursive version descending.
+/* Each of these calls, if it is greater than 1, will again be calling your previous    two.*/
+    /* 1.- Recursive  descending.*/
+def fib1( n : Int) : Int =
+{
+    if(n<2) n
+    else fib1( n-1 ) + fib1( n-2 )
+}
+
+fib1(5)
+///////////////
+//Exercise 2
+//Fibonacci sequence uch that each number is the sum of the two preceding ones, starting from 0 and 1. Fibonacci numbers have the generating function
+    /* 2.- Version with explicit formula.*/
+    def fib2( n : Int ) : Int = {
+        if(n<2)n
+        else
+        {
+            var y = ((1+math.sqrt(5))/2)
+            var k = ((math.pow(y,n)-math.pow((1-y),n))/math.sqrt(5))      
+            k.toInt
+        }
+}
+        
+//////////////////////////////    
+  //Exercise3
+//define fib
+//Declare 2 variables type Int
+def fib(n:Int):Int = {
+    var a:Int = 0
+    var b: Int = 1
+   
+    //Use for Cicle
+    
+    for (k<- Range(0,n)){
+    //Declare variable C type int
+       var c :Int = b+a
+        a = b
+        b = c
+    }
+     //Return a   
+     return a
+    }
+//result
+fib(9)  
+/////////////////////
+//Exercise 4
+//Define fib4
+//Declare 2 variables type int
+def fib4(n:Int):Int = {
+   var a:Int =0
+    var b:Int =1
+    // use for cicle
+    for (k<- Range(0,n)){
+    
+        b = b+a
+        a = b-a
+        
+    }
+     //Return a   
+    return a
+    }
+
+//result
+fib4(9)
+
+/////////////////
+//Exercise5
+/* 5.- Iterative vector version.*/
+    def fib5(n:Int): Int={
+    if(n<2)n    
+    else{        
+        var b = List.range(0,n+1)
+        for(k<-Range(2,n+1)){            
+            b = b.updated(k,(b(k-1)+b(k-2)))            
+        }            
+        b(n)
+     }     
+}
 ```
 
-###Images
 
-Image:
-
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
-
-> Follow your heart.
-
-![](https://pandao.github.io/editor.md/examples/images/8.jpg)
-
-> 图为：厦门白城沙滩 Xiamen
-
-图片加链接 (Image + Link)：
-
-[![](https://pandao.github.io/editor.md/examples/images/7.jpg)](https://pandao.github.io/editor.md/examples/images/7.jpg "李健首张专辑《似水流年》封面")
-
-> 图为：李健首张专辑《似水流年》封面
-                
-----
-
-###Lists
-
-####Unordered list (-)
-
-- Item A
-- Item B
-- Item C
-     
-####Unordered list (*)
-
-* Item A
-* Item B
-* Item C
-
-####Unordered list (plus sign and nested)
-                
-+ Item A
-+ Item B
-    + Item B 1
-    + Item B 2
-    + Item B 3
-+ Item C
-    * Item C 1
-    * Item C 2
-    * Item C 3
-
-####Ordered list
-                
-1. Item A
-2. Item B
-3. Item C
-                
-----
-                    
-###Tables
-                    
-First Header  | Second Header
-------------- | -------------
